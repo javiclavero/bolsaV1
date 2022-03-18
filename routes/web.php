@@ -14,5 +14,23 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('home');
+})->name('home');
+
+Route::get('/cotizaciones', function () {
+    return view('cotizaciones');
+})->name('cotizaciones');
+
+Route::get('/bolsa', function () {
+    return view('bolsa');
+})->name('bolsa');
+
+Route::get('/cuentas', function () {
+    return view('cuentas');
+})->name('cuentas');
+
+Route::get('/inversiones', function () {
+    return view('inversiones');
+})->name('inversiones');
+
+Route::post('bolsa/newOperation', 'App\Http\Controllers\OperationController@new')->name('newOperation-form-submit');
