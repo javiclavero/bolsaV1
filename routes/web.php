@@ -21,6 +21,8 @@ Route::get('/cotizaciones', function () {
     return view('cotizaciones');
 })->name('cotizaciones');
 
+Route::get('cotizaciones/import/{ticker}', 'App\Http\Controllers\GrabberController@grabDataYahoo')->name('importTicker');
+
 Route::get('/bolsa', function () {
     return view('bolsa');
 })->name('bolsa');

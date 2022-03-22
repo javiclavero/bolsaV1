@@ -14,5 +14,12 @@ class StockController extends Controller
       return $stock;
       
     }
+    
+    public function getStockIdByTicker($sto_ticker){
+      
+      $stock = tblStocks::where('sto_ticker', $sto_ticker)->value("sto_id");;
+      return $stock;
+      
+    }
 }
 

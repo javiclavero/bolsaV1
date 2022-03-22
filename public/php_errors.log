@@ -1,0 +1,2 @@
+[22-Mar-2022 14:06:29 UTC] PHP Fatal error:  Maximum execution time of 60 seconds exceeded in C:\Sites\laraveltest\bolsaV1\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php on line 70
+[22-Mar-2022 16:01:35 UTC] PHP Fatal error:  Cannot use try without catch or finally in C:\Sites\laraveltest\bolsaV1\app\Http\Controllers\GrabberController.php on line 50
